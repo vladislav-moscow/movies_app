@@ -51,7 +51,8 @@ export const cardsTemplate = async (endpoint, containerSelector, idParam) => {
  * @param {string} contentType - Тип контента (например, "movie" или "tv").
  * @param {string} endpoint - Конечная точка API, к которой нужно выполнить запрос.
  */
-export const cardsTemplateWithSlider = async (contentType, endpoint) => {
+export const cardsTemplateWithSlider = async (results, contentType, endpoint) => {
+	
   results.forEach((content) => {
     const div = document.createElement("div");
 

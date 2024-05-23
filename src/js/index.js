@@ -1,5 +1,5 @@
 import { global } from "./global.js";
-
+import { initSwiper, loadMovies } from "./components/swiper.js";
 /**
  * Инициализирует функции в зависимости от страницы.
  */
@@ -9,7 +9,8 @@ function init() {
     case "/":
     case "/index.html":
       // Вызываем функции для отображения фильмов в прокате (слайдер), а также популярных фильмов и сериалов
-
+			initSwiper();
+      loadMovies();
       break;
     case "/movie-details.html":
       // Вызываем функцию для отображения деталей о фильме
