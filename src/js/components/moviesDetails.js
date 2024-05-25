@@ -20,10 +20,6 @@ const getContentById = async (contentId, contentType) => {
 export const loadContentDetails = async (patch) => {
   try {
     const contentId = getContentIdFromURL();
-    /*const contentDataMovieById = await getContentById(contentId, 'movie');
-    const contentDataTvById = await getContentById(contentId, 'tv');
-    displayContentDetails(contentDataMovieById, 'movie-details');
-    displayContentDetails(contentDataTvById, 'tv-details');*/
 		if (patch === 'movie') {
 			// Получаем информацию о фильме по ID
 			const contentDataMovieById = await getContentById(contentId, 'movie');

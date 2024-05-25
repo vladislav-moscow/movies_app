@@ -107,3 +107,4 @@ export const displayContentDetails = (content, containerId) => {
   `;
   document.querySelector(`#${containerId}`).appendChild(div);
 };
+
