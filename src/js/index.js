@@ -2,6 +2,7 @@ import { global } from './global.js';
 import { loadMovies } from './components/swiper.js';
 import { loadTabsMovies, tabsComponent } from './components/tabs.js';
 import { loadContentDetails } from './components/moviesDetails.js';
+import { search } from './api/searchServices.js';
 /**
  * Инициализирует функции в зависимости от страницы.
  */
@@ -29,6 +30,7 @@ function init() {
 			break;
 		case '/search.html':
 			// Вызываем функцию для выполнения поиска
+			search();
 			break;
 	}
 }
