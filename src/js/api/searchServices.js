@@ -95,13 +95,12 @@ export const search = async () => {
 /**
  * Отображает результаты поиска.
  * @param {Array} results - Массив объектов с результатами поиска.
+ * @param {string} contentType - Массив объектов с результатами поиска.
  */
 export const displaySearchResults = (results, contentType) => {
 	const searchResultsContainer = document.getElementById('search-results');
 	// Очищаем контейнер перед отображением новых результатов
   searchResultsContainer.innerHTML = '';
-	console.log(results);
-	
 
 	results.forEach((content) => {
 		const div = document.createElement('div');
@@ -138,7 +137,6 @@ export const displaySearchResults = (results, contentType) => {
 
 			searchResultsContainer.appendChild(div);
 	});
-  // Основная логика
   // Отображаем пагинацию
   displayPagination();
 };

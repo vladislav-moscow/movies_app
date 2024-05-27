@@ -25,6 +25,7 @@ export const tabsComponent = () => {
 				e.target.classList.add('tabs__btn--active');
 				// Вызываем функцию для обработки вкладок с переданным значением data-tabs-path
 				tabsHandler(tabsPath);
+				// Вызываем функцию для отображение данных в вкладке
 				loadTabsMovies(tabsPath);
 			}
 		});

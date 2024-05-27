@@ -24,7 +24,7 @@ export const initSwiper = () => {
 };
 
 /**
- * запрос и ui на страницу
+ * Функция для загрузки фильмов и отображения их в слайдере
  */
 
 export const loadMovies = async () => {

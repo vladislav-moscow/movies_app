@@ -1,9 +1,8 @@
 import { initSwiper } from '../components/swiper.js';
 
 /**
- * Отображает список контента (фильмы или сериалы) в зависимости от указанного endpoint.
- * Получает данные о популярных фильмах или сериалах с помощью функции getData.
- * @param {string} results - Данный которые мы должны отобразить.
+ * Отображает список контента (фильмы или сериалы).
+ * @param {Array} results - Массив для отображение в слайдере
  * @param {string} containerSelector - Селектор контейнера, в который будут добавлены элементы.
  * @param {string} idParam - Название параметра, используемое для создания ссылок на страницы с деталями контента.
  * @returns {Promise} Объект Promise.
@@ -48,13 +47,14 @@ export const cardsTemplate = async (results, containerSelector, idParam) => {
 
 /**
  * Асинхронная функция для получения и отображения контента в слайдере.
+ * @param {Array} results - Массив для отображение в блоке
  * @param {string} contentType - Тип контента (например, "movie" или "tv").
- * @param {string} endpoint - Конечная точка API, к которой нужно выполнить запрос.
+ * 
  */
 export const cardsTemplateWithSlider = async (
 	results,
 	contentType,
-	endpoint
+	
 ) => {
 	results.forEach((content) => {
 		const div = document.createElement('div');
@@ -91,6 +91,11 @@ export const cardsTemplateWithSlider = async (
 	initSwiper();
 };
 
+/**
+ * 
+ * @param {object} content - Объект карточки
+ * @param {string} containerId - блок где отображаем данные из объекта
+ */
 export const displayContentDetails = (content, containerId) => {
   const div = document.createElement('div');
   div.classList.add('detail-wrapper');
