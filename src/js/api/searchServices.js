@@ -54,6 +54,7 @@ export const searchData = async () => {
 };*/
 
 export const search = async () => {
+
 	// Получаем тип поиска (фильмы или сериалы)
 	const searchType = document.querySelector('input[name="type"]:checked').value;
 
@@ -88,7 +89,8 @@ export const search = async () => {
 	const searchResults = await searchData();
 	if (searchResults) {
 			const data = searchResults.results;
-			displaySearchResults(data, searchType); // Передаем тип контента в функцию отображения результатов
+			//cardsTemplate(data, searchType)
+			displaySearchResults(data,  searchType); // Передаем тип контента в функцию отображения результатов
 	}
 };
 
@@ -137,8 +139,7 @@ export const displaySearchResults = (results, contentType) => {
 
 			searchResultsContainer.appendChild(div);
 	});
-  // Отображаем пагинацию
-  displayPagination();
+  
 };
 
 /**

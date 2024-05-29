@@ -54,7 +54,6 @@ export const cardsTemplate = async (results, containerSelector, idParam) => {
 export const cardsTemplateWithSlider = async (
 	results,
 	contentType,
-	
 ) => {
 	results.forEach((content) => {
 		const div = document.createElement('div');
