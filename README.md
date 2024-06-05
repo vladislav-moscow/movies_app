@@ -1,27 +1,27 @@
 <div>
-  <h1>Movies Library</h1>
-  <p>A collection of movies.</p>
+  <h1>Библиотека фильмов</h1>
+  <p>Коллекция фильмов.</p>
 </div>
 
 ## Instructions 📋
 
-- Download application
-- Download [`NodeJS`](https://nodejs.org/en)
-- Run terminal inside this folder
-- Run npm install for install dependencies
-- After that, run `npm run dev` for running the project
+- Скачать приложение
+- Скачать [`NodeJS`](https://nodejs.org/en)
+- Запустите терминал внутри этой папки
+- Запустите npm install для установки зависимостей
+- После этого запустите `npm run dev` для запуска проекта
 
-Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
+	Открыть [http://localhost:5173](http://localhost:5173) с помощью вашего браузера, чтобы увидеть результат.
 
-## Technologies used
+## Используемые технологии
 
-This project follows a custom structure that combines the following:
+Этот проект основан на пользовательской структуре, которая сочетает в себе следующее:
 
 - HTML5
 - CSS3
 - JavaScript (ES6)
 - Swiper
-- Custom fetch wrapper for HTTP-methods
+- Пользовательская оболочка выборки для HTTP-методов
 - Vite
 
-The project utilizes the Movie Database API for fetching movie information.
+Проект использует API базы данных фильмов для получения информации о фильмах.
